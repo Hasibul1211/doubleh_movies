@@ -1,0 +1,8 @@
+#food .boxes .box{
+  display: flex;
+    text-align: left;
+}
+#food .boxes .box img{
+    align-self: center;
+    margin-right: 0.5rem;
+}

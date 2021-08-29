@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0.8)),url(../pictures/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.logo_detail{
+    width: 180px;
+    margin-top: 18px;
+}
+.header{
+    height: 10%;
+}
+.header-btn{
+    text-decoration: none !important;
+    border-radius: 20px;
+    float: right;
+    margin-top: 15px;
+    padding: 7px 18px;
+    color: #FFFFFF !important;
+    background: deepskyblue;
+    font-weight: 600;
+}
+.movie-detail{
+    margin:auto;
+    margin-top: 3%;
+
+}
+.left-box{
+    color: whitesmoke;
+    margin: 15px 0px;
+    padding: 20px;
+
+}
+.casting img{
+    height:70px;
+    width: 60px;
+    border-radius: 10px;
+    transition: transform .2s; /* Animation */
+
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.left-box a{
+    text-decoration: none !important;
+    border-radius: 20px;
+
+    padding: 7px 10px;
+    color: #FFFFFF !important;
+    background: deepskyblue;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 35px;
+}
+.left-box .buy-now-btn{
+    border:1px solid deepskyblue;
+    background: transparent;
+}
+.movie-de-img{
+    height: 390px;
+    box-shadow: -4px 4px 5px 0 #000;
+}
+
+.div-actor-name{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-actor-name{
+    color: whitesmoke;
+    font-weight: 400;
+
+}
+.div-actor-name{
+    visibility: collapse;
+}
+
+.casting:hover img{
+    transform: scale(1.5);
+}
+
+.casting:hover .div-actor-name{
+    visibility: visible;
+    transition: transform .2s; /* Animation */
+}
+/*.box_actor{*/
+/*    width:60px;*/
+/*    height:70px;*/
+/*    background-color:#1e1e26;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    box-sizing: border-box;*/
+/*    margin: 20px 10px;*/
+
+/*}*/

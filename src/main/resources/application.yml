@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    password: 211068
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sakila
+
+server:
+  servlet:
+    context-path: /doubleh_movies
+  port: 8080
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

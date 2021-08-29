@@ -1,0 +1,320 @@
+/*Roboto Font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+body{
+    background: #252A34 url(../pictures/films/bg1.png) no-repeat center
+    center fixed;
+    height: 100vh;/* vh = view port height*/
+    color: #fff;
+    horiz-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+/*navbar section*/
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem; /* 1 rem = 16 px */
+    position: sticky; /*here to stick the nav bar in the top of the page*/
+    top: 0;
+    z-index: 1;  /*here to make the nav bar on all items */
+}
+
+#navbar  ul{
+    list-style: none;/* to delete the dot */
+    display: flex;
+    margin-top: 1rem;
+}
+#navbar ul li a{
+    color: #fff;
+
+    margin-left: 4px;
+
+}
+
+#navbar ul li {
+    color: #fff;
+    padding: 1rem;
+    margin-right: 0.5rem;
+}
+
+#navbar ul li:hover{
+    background-color: deepskyblue;
+
+    border-radius: 4px ;
+    border-width: 0;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: deepskyblue;
+}
+#moviedata{
+
+    height: 100vh;/* vh = view port height*/
+    color: #fff;
+    horiz-align: center;
+
+}
+.bg_dark{
+    background-color: #161619 ;
+    color: #fff ;
+}
+
+.nav li a{
+    color: #fff ;
+}
+.hover_li a:hover{
+    background-color: skyblue;
+    color: #000000;
+}
+
+
+
+.search {
+    margin-left: 40px;
+    width: 500px;
+    position: relative;
+    display: flex;
+}
+.nav .hover_li a:hover{
+    color: deepskyblue;
+
+}
+.searchTerm {
+    width: 100%;
+    /*border: 3px solid deepskyblue;*/
+    border-right: none;
+    padding: 5px;
+    background-color: #1b1e21;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    color: whitesmoke;
+}
+
+.search .searchTerm:focus{
+    color: whitesmoke;
+    background-color: #232629;
+
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid skyblue;
+    background: deepskyblue;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+#moviedata .boxes{
+    display: flex;
+
+    /*align-items: center;*/
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+}
+
+
+.box .item {
+    align-items: center;
+    justify-content: center;
+}
+
+#moviedata .box:hover{
+    background-color: #17171d;
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+#moviedata .max-lines {
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
+}
+
+#moviedata .boxes .box{
+    width:230px;
+    height:400px;
+    background-color: #1E1E21;
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    flex: 1 0 21%; /* explanation below */
+}
+.model{
+    height: 230px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.marvel{
+    color:#32323e;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: bebas kai;
+    font-size: 18px;
+}
+
+.logo{
+    height: 60px;
+    font-family: calibri;
+    font-weight: 700;
+    color:whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.box:hover .marvel{
+    color: #6b6d74;
+    transition: all ease 0.5s;
+}
+#moviedata .box:hover{
+    background-color: #17171d;
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+.box .item img{
+    opacity: 0.2;
+    width: 90px;
+}
+.box:hover .item img{
+    opacity: 1;
+    transition: all ease 0.5s;
+    width: 105px;
+
+}
+/*--responsive for mobile phone--*/
+@media(max-width:720px){
+    .box{
+        width: 94%;
+        height: 500px;
+    }
+    .model{
+        height:250px;
+    }
+    .details .movie-name{
+        font-size: 35px;
+        width: 250px;
+    }
+
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+.details p{
+    font-family: calibri;
+    font-weight: bold;
+    color:#6a6a74;
+    text-align: center;
+    margin-top: 20px;
+}
+.div-btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy-btn{
+    width:100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9, 9, 9, 0.55);
+    color:white;
+    font-size: medium;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+.img-div{
+    position:relative;
+}
+
+.buy-btn:hover{
+    color:#FFFFFF;
+    background-color: skyblue;
+    transition: all ease 0.3s;
+}
+.buy-btn{
+    visibility: hidden;
+}
+.div-btn:hover .buy-btn{
+    visibility: visible;
+    animation:fade 0.5s;
+}
+
+.box .movie-name{
+font-size: large;
+    font-family: Calibri;
+    font-weight: bold;
+    color: white;
+}
+
+

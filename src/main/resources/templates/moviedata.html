@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="row" id="moviedata">
+    <div class="boxes" >
+        <div class="box" th:each="movie:${pageInfo.list}">
+
+
+            <div class="item">
+                <p class="marvel" th:text="${movie.category}"></p>
+            </div>
+            <div class="img-div">
+                <img th:src="@{'/pictures/films/'+${movie.fid}+'.jpg'}" class="model">
+                <!--					<img th:src="@{'/pictures/films/'+${movie.fid}+'.jpg'}" class="model">-->
+
+                <!--buy-btn------>
+
+                <div class="div-btn">
+                    <a th:href="@{'/detail?id='+${movie.fid}+'&category='+${movie.category}}" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+            <!--model-->
+
+
+            <!--details-->
+            <div class="details">
+                <!--logo-character-->
+                <p  class="movie-name" th:text="${movie.title}" ></p>
+                <p  class="details max-lines" th:text="${movie.description}"></p><br>
+
+                <!--					<p  class="movie-name" width="100px" style="height: auto;"th:text="${movie.getTitle()}"></p>-->
+                <!--character-details-->
+            </div>
+
+        </div>
+
+<!--    <div class="col-md-3" th:each="movie:${pageInfo.list}"-->
+<!--         style="height:300px;">-->
+<!--        <a th:href="@{'/detail?id='+${movie.fid}}" class="thumbnail">-->
+<!--            <img th:src="@{'/pictures/films/'+${movie.fid}+'.jpg'}"-->
+<!--                 style="height:180px;">-->
+<!--        </a>-->
+<!--        <div class="caption">-->
+<!--            <p th:text="${movie.fid}" class="text-center"></p>-->
+<!--            <p th:text="${movie.category}" class="text-center"></p>-->
+<!--            <p th:text="${movie.title}" class="text-center"></p>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+
+<body>
+    <div th:fragment="quantity_controller(qtyValue,fid)">
+        <nav>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link minusButton" href="" th:fid="${fid}" th:cid="${session.customer.customer_id}"><b>-</b></a>
+                    <input type="hidden" id="fid" name="fid" th:value="${movie.fid}">
+                    <input type="hidden" id="customer_id" name="customer_id" th:value="${session.customer.customer_id}">
+                    <input type="hidden" id="quantity" name="quantity" th:value="${movie.quantity}">
+                </li>
+                <li class="page-item">
+                    <input type="text" th:value="${qtyValue}" class="form-control text-center"
+                           onkeydown="return false;" style="max-width: 55px"
+                           th:id="'quantity'+${fid}">
+                </li>
+                <li class="page-item">
+                    <a class="page-link plusButton" href="" th:fid="${fid}" th:cid="${session.customer.customer_id}" ><b>+</b></a>
+                </li>
+            </ul>
+
+
+        </nav>
+    </div>
+
+</body>
+</html>

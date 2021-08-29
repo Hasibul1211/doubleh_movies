@@ -1,0 +1,17 @@
+
+
+
+.bg-dark{
+    background: black;
+    color: whitesmoke;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+
+}
+.text-white{
+    color: whitesmoke;
+}
+.logo img{
+    width: 150px;
+}

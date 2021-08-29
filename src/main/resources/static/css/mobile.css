@@ -1,0 +1,43 @@
+/* Utility classes  */
+.l-heading{
+    font-size: 2.1rem;
+    line-height: 1.2;
+}
+.lead{
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+/* navbar */
+#navbar {
+   flex-direction: column;
+    padding-bottom: 1.5rem;
+
+}
+
+#navbar .logo{
+    margin-bottom: 0.5rem;
+
+
+}
+
+/*about */
+#about .about_content{
+    display: block;
+    text-align: center;
+}
+#about .about_content img{
+    width: 100%;
+    margin: 1rem 0 0 0 ;
+}
+
+/* food */
+#food .boxes{
+    display: block;
+
+}
+
+/* clothing*/
+#clothing .clothing-boxes{
+display: block;
+}
