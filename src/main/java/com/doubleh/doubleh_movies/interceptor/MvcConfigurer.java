@@ -19,6 +19,8 @@ public class MvcConfigurer implements WebMvcConfigurer {
                 "/login",
                 "/login.html",
                 "/error",
+                "/admin/**",
+                "/admin/*.*",
                 "/home.html",
                 "/register.html",
                 "/movie_detail2.html",

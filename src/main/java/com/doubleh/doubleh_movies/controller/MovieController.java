@@ -174,7 +174,6 @@ public class MovieController {
         movieList = movieService.getCartByCusId(customer_id);
 
         System.out.println(movieList+"ssssssssssssssssssssssssssssss");
-        System.out.println(movieList.get(0).getSubtotal()+"LLLLLLLLLLLLLLLLLLLLLLLLLLLLL");
         model.addAttribute("movies_cart",movieList);
 
         return "cart";
@@ -199,6 +198,19 @@ public class MovieController {
         return "redirect:cart";
     }
 
+
+    @RequestMapping("/deletecart")
+    public String toCart(int cid,int fid){
+        int result = 0;
+
+        result = movieService.deleteCart(cid,fid);
+        if(result>0){
+            System.out.println("deleted");
+        }else System.out.println("not deleted");
+
+        return "redirect:cart";
+
+    }
 
 
 
